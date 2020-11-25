@@ -1,6 +1,10 @@
 <Project>
 
 	<PropertyGroup>
+		<GitSemVerLabel>d2l</GitSemVerLabel>
+	</PropertyGroup>
+
+	<PropertyGroup>
 		<MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
 		<GitIgnoreTagVersion>True</GitIgnoreTagVersion>
 		<GitIgnoreBranchVersion>True</GitIgnoreBranchVersion>
@@ -22,7 +26,7 @@
 
 	<Target Name="SetNuspecProperties" BeforeTargets="GenerateNuspec" DependsOnTargets="GitVersion">
 		<PropertyGroup>
-			<PackageVersion>$(GitSemVerMajor).$(GitSemVerMinor).$(GitSemVerPatch)-d2l$(GitSemVerDashLabel)</PackageVersion>
+			<PackageVersion>$(GitSemVerMajor).$(GitSemVerMinor).$(GitSemVerPatch)$(GitSemVerDashLabel)</PackageVersion>
 			<NuspecProperties>configuration=$(Configuration);version=$(PackageVersion)</NuspecProperties>
 		</PropertyGroup>
 	</Target>
