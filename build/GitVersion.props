@@ -1,7 +1,7 @@
 <Project>
 
 	<PropertyGroup>
-		<GitSemVerLabel>d2l</GitSemVerLabel>
+		<GitSemVerDashLabel>-d2l</GitSemVerDashLabel>
 	</PropertyGroup>
 
 	<PropertyGroup>
