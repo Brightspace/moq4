@@ -1,6 +1,10 @@
 <Project>
 
 	<PropertyGroup>
+		<GitSemVerDashLabel>-d2l</GitSemVerDashLabel>
+	</PropertyGroup>
+
+	<PropertyGroup>
 		<MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
 		<GitIgnoreTagVersion>True</GitIgnoreTagVersion>
 		<GitIgnoreBranchVersion>True</GitIgnoreBranchVersion>
